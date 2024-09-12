@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Service, TimeSlot } from '../../../types'
-import { MOCK_SERVICES } from '../services/route'
+import { MOCK_SERVICES } from '../../services/serviceHelpers'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
