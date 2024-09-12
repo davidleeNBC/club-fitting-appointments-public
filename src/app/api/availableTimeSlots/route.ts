@@ -19,7 +19,7 @@ export async function GET(request: Request) {
     {
       time: '8:00 AM',
       providerId: '1',
-      availableServices: getRandomServices(3),
+      availableServices: MOCK_SERVICES.slice(0,3),
     },
     {
       time: '8:30 AM',
